@@ -1,0 +1,83 @@
+{
+    "name": "Team of Experts",
+    "description": "This schema represents a team of AI experts, each with their own unique skills, perspectives, and backgrounds.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "expert_1": {
+                "type": "object",
+                "properties": {
+                    "expert_description": {
+                        "type": "string",
+                        "description": "A comprehensive description of the expert's knowledge domain, qualifications, and specializations."
+                    },
+                    "personality": {
+                        "type": "string",
+                        "description": "The AI's personality traits, which can influence its problem-solving approach."
+                    },
+                    "creativity": {
+                        "type": "float",
+                        "enum": "[0.0, 0.2, 0.4, 0.6, 0.8, 1.0]",
+                        "description": "A numeric measure of the AI expert's creativity."
+                    }
+                },
+                "required": [
+                    "expert_description",
+                    "personality",
+                    "creativity"
+                ]
+            },
+            "expert_2": {
+                "type": "object",
+                "properties": {
+                    "expert_description": {
+                        "type": "string",
+                        "description": "A comprehensive description of the expert's knowledge domain, qualifications, and specializations."
+                    },
+                    "personality": {
+                        "type": "string",
+                        "description": "The AI's personality traits, which can influence its problem-solving approach."
+                    },
+                    "creativity": {
+                        "type": "float",
+                        "enum": "[0.0, 0.2, 0.4, 0.6, 0.8, 1.0]",
+                        "description": "A numeric measure of the AI expert's creativity."
+                    }
+                },
+                "required": [
+                    "expert_description",
+                    "personality",
+                    "creativity"
+                ]
+            },
+            "expert_3": {
+                "type": "object",
+                "properties": {
+                    "expert_description": {
+                        "type": "string",
+                        "description": "A comprehensive description of the expert's knowledge domain, qualifications, and specializations."
+                    },
+                    "personality": {
+                        "type": "string",
+                        "description": "The AI's personality traits, which can influence its problem-solving approach."
+                    },
+                    "creativity": {
+                        "type": "float",
+                        "enum": "[0.0, 0.2, 0.4, 0.6, 0.8, 1.0]",
+                        "description": "A numeric measure of the AI expert's creativity."
+                    }
+                },
+                "required": [
+                    "expert_description",
+                    "personality",
+                    "creativity"
+                ]
+            }
+        },
+        "required": [
+            "expert_1",
+            "expert_2",
+            "expert_3"
+        ]
+    }
+}
